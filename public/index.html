@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AnkBot</title>
+    <link rel="icon" href="media/icon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+        <main>
+            <div class="col-1">
+                <div class="ank-space">
+                    <img class="ank-img" src="media/ank.png" />
+                </div>
+                <div class="content">
+                    <h1 class="title">ANK</h1>
+                    <p class="description">Distributor of SnekCoin™, Snek enthusiast & original Snek friend</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="documentation">
+                    <h1 class="docs-title">SnekCoin™ API Docs</h1>
+                    <p class="docs-desc">The Ank API exposes various methods for interacting with SnekCoin™ -- HackClub's up-and-coming currency far superior to GP.</p>
+                    <div class="doc-text">
+                        <div>
+                            <span class="doc-header">Get User Balance</span>
+                            <code>www.ankbot.net/api/balance?id=[ID]</code>
+                            <span class="doc-method-prop">Method: <code>GET</code></span>
+                            <span class="doc-subheader">Query Parameters</span>
+                            <span class="doc-method-prop"><code>id</code> - Slack user ID</span>
+                            <span class="doc-subheader">Response</span>
+                            <code>{ "value": number }</code>
+                        </div>
+                        <div>
+                            <span class="doc-header">Get Users</span>
+                            <p>Fetch range of SnekCoin™ users sorted by balance.</p>
+                            <code>www.ankbot.net/api/users</code>
+                            <span class="doc-method-prop">Method: <code>GET</code></span>
+                            <span class="doc-subheader">Query Parameters</span>
+                            <span class="doc-method-prop"><code>lower: int</code> - Lower number of selection range (inclusive)</span>
+                            <span class="doc-method-prop"><code>upper: int</code> - Higher number of selection range (exclusive)</span>
+                            <span class="doc-subheader">Response</span>
+                            <code>[ { "userId": string, "balance": number } ... ]</code>
+                        </div>
+                        <div>
+                            <span class="doc-header">Get Starting Amount</span>
+                            <p>Fetch amount of SnekCoin™ a new user would start with.</p>
+                            <code>www.ankbot.net/api/starting-amount</code>
+                            <span class="doc-method-prop">Method: <code>GET</code></span>
+                            <span class="doc-subheader">Response</span>
+                            <code>{ "value": number }</code>
+                        </div>
+                        <div>
+                            <span class="doc-header">Make Transaction</span>
+                            <code>www.ankbot.net/api/transfer</code>
+                            <span class="doc-method-prop">Method: <code>POST</code></span>
+                            <span class="doc-subheader">Request Body</span>
+                            <span class="doc-method-prop"><code>payer: string</code> - Slack user ID of paying user</span>
+                            <span class="doc-method-prop"><code>receiver: string</code> - Slack user ID of receiving user</span>
+                            <span class="doc-method-prop"><code>amount: number</code> - SnekCoin™ being exchanged</span>
+                            <span class="doc-method-prop"><code>key: string</code> - Ank API key required to authorize transaction. Please contact <span class="handle">@Professor Sucrose</span> on Slack to issue one for your app.</span>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="github">
+                    <a href="https://github.com/profsucrose/ank-web"><img src="media/github.png" /></a>
+                    <span>
+                        <a href="https://github.com/profsucrose/ank-web">GitHub</a>
+                    </span>
+                </div>
+            </div>
+        </main>
+  </body>
+</html>

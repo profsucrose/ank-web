@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #F3B0AC;
+    margin: 0;
+    color: white;
+}
+
+.ank-img {
+    width: 300px;
+    position: absolute;
+    left: 15vw;
+    top: 10vw;
+    transform: rotate(-30deg);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: row;
+}
+
+.content {
+    text-align: right;
+    padding: 80px 25%;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 70px;
+    text-align: left;
+    border-bottom-style: solid;
+}
+
+.col-1 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.col-2 {
+    height: 100%;
+    width: 30%;
+    padding: 0 30px;
+    background: white;
+    color: #F35B2C;
+}
+
+.ank-space {
+    height: 70%;
+    width: 100%;
+}
+
+.content {
+    height: 30%;
+    width: 70%;
+}
+
+.doc-header {
+    font-size: 20px;
+    border-bottom-style: solid;
+    margin-bottom: 10px;
+}
+
+.documentation {
+    overflow-y: auto;
+    height: calc(100% - 50px);
+}
+
+.doc-subheader {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+span {
+    display: block;
+}
+
+.url {
+    color: #7f7fff;
+}
+
+.doc-text {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 60px;
+    font-size: 13px;
+}
+
+.docs-title, .docs-desc {
+    text-align: right;
+}
+
+.doc-method-prop {
+    padding-left: 40px;
+    margin-bottom: 13px;
+}
+
+.doc-text div {
+    margin-bottom: 15px;
+}
+
+.handle {
+    text-decoration: underline;
+    display: inline;
+}
+
+code {
+    background: #F35B2C;
+    color: white;
+    padding: 3px 2px 3px 2px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.github {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+.github img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.github span a {
+    font-weight: 900;
+    color: #F35B2C;
+    text-decoration: none;
+}
